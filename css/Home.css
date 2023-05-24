@@ -224,6 +224,11 @@ body {
     border: none;
 }
 
+.border-yellow {
+    border: 1px solid #FAFD86;
+    border-radius: 5px;
+    color: #FAFD86;
+}
 
 /* END CATEGORIES */
 
@@ -231,12 +236,14 @@ body {
 .newsletter {
     position: relative;
     padding-top: 5%;
+    padding-bottom: 5%;
     /* center */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white
+    color: white;
+    min-height: 40vh;
 }
 
 .newsletter img {
