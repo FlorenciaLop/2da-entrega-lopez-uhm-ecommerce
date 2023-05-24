@@ -26,14 +26,21 @@ body {
 
 /* FORM */
 
-.container {
+.container-form {
     background-color: #F0F5F0;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     margin: 0 auto;
-    max-width: 900px;
+    max-width: 650px;
+
     text-align: center;
+}
+
+.form-interior {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 h2 {
