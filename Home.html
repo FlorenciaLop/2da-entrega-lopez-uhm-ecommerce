@@ -20,12 +20,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap" rel="stylesheet">
     <!-- END FONTS -->
 
-    <title>Document</title>
+    <title>Home</title>
 </head>
 
 <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-container">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img class="logo" src="assets/logo.png" alt="logo">
@@ -47,11 +47,14 @@
                     </li>
                 </ul>
                 <div class="d-flex align-items-center">
-                    <div class="search">
-                        <div class="search-container">
-                            <input class="form-control" type="text" placeholder="Search...">
-                            <button class="btn" type="submit"><img src="assets/search.png"></button>
+
+                    <div class="input-group">
+                        <div class="form-outline">
+                            <input type="search" placeholder="Search..." id="search-input" class="form-control" />
                         </div>
+                        <button type="button" class="btn btn-light button-search">
+                            <img src="assets/search.png">
+                        </button>
                     </div>
                     <div class="icons ml-3">
                         <div class="carrito">
@@ -74,14 +77,20 @@
 
     <!-- ======================================================================== -->
     <!-- PORTADA -->
-    <div class="portada">
-        <div class="portada-text">
-            <h1>Spring Sale</h1>
-            <h2>Todo -30%</h2>
-            <button>VER MÁS</button>
+    <div class="p-5 text-center bg-image rounded-3 portada">
+        <div class="mask">
+            <div class="d-flex justify-content-left align-items-center h-100 pl-5">
+                <div class="portada-text text-white">
+                    <h1 class="banner-title">Spring Sale</h1>
+                    <h2 class="banner-subtitle">Todo -30%</h2>
+                    <button class="btn btn-primary">VER MÁS</button>
+                </div>
+            </div>
         </div>
     </div>
+
     <!-- END PORTADA -->
+
     <!-- ======================================================================== -->
     <!-- CATEGORIES -->
     <div class="categories">
@@ -96,10 +105,8 @@
                     <div class="card bg-dark text-white">
                         <img src="assets/category1.png" class="card-img img-fluid" alt="category1">
                         <div class="card-img-overlay d-flex flex-column justify-content-end">
-                            <h5 class="card-title">Category 1</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <button class="btn btn-primary">VER MÁS</button>
+                            <h1 class="card-title">Hombre</h1>
+                            <button class="btn btn-primary btn-large explorar">EXPLORAR</button>
                         </div>
                     </div>
                 </div>
@@ -107,10 +114,8 @@
                     <div class="card bg-dark text-white">
                         <img src="assets/category2.png" class="card-img img-fluid" alt="category2">
                         <div class="card-img-overlay d-flex flex-column justify-content-end">
-                            <h5 class="card-title">Category 2</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <button class="btn btn-primary">VER MÁS</button>
+                            <h1 class="card-title">Mujer</h1>
+                            <button class="btn btn-primary btn-large explorar">EXPLORAR</button>
                         </div>
                     </div>
                 </div>
@@ -129,59 +134,60 @@
             <div class="col-lg-4 col-md-6 mb-3">
                 <div class="card bg-dark text-white">
                     <img src="assets/grid/grid1.png" class="card-img" alt="Sample photo">
-                    <div class="card-img-overlay d-flex flex-column justify-content-end">
-                        <h1 class="card-title">Sweaters</h1>
-                        <button class="btn btn-primary">Ver más</button>
+                    <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
+                        <h1 class="card-title text-center">Sweaters</h1>
+                        <button class="btn btn-outline-primary text-yellow border-yellow">Ver más</button>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-3">
                 <div class="card bg-dark text-white">
                     <img src="assets/grid/grid2.png" class="card-img" alt="Sample photo">
-                    <div class="card-img-overlay d-flex flex-column justify-content-end">
-                        <h1 class="card-title">Sweaters</h1>
-                        <button class="btn btn-primary">Ver más</button>
+                    <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
+                        <h1 class="card-title text-center">Sweaters</h1>
+                        <button class="btn btn-outline-primary text-yellow border-yellow">Ver más</button>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-3">
                 <div class="card bg-dark text-white">
                     <img src="assets/grid/grid3.png" class="card-img" alt="Sample photo">
-                    <div class="card-img-overlay d-flex flex-column justify-content-end">
-                        <h1 class="card-title">Sweaters</h1>
-                        <button class="btn btn-primary">Ver más</button>
+                    <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
+                        <h1 class="card-title text-center">Sweaters</h1>
+                        <button class="btn btn-outline-primary text-yellow border-yellow">Ver más</button>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-3">
                 <div class="card bg-dark text-white">
                     <img src="assets/grid/grid4.png" class="card-img" alt="Sample photo">
-                    <div class="card-img-overlay d-flex flex-column justify-content-end">
-                        <h1 class="card-title">Sweaters</h1>
-                        <button class="btn btn-primary">Ver más</button>
+                    <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
+                        <h1 class="card-title text-center">Sweaters</h1>
+                        <button class="btn btn-outline-primary text-yellow border-yellow">Ver más</button>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-3">
                 <div class="card bg-dark text-white">
                     <img src="assets/grid/grid5.png" class="card-img" alt="Sample photo">
-                    <div class="card-img-overlay d-flex flex-column justify-content-end">
-                        <h1 class="card-title">Sweaters</h1>
-                        <button class="btn btn-primary">Ver más</button>
+                    <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
+                        <h1 class="card-title text-center">Sweaters</h1>
+                        <button class="btn btn-outline-primary text-yellow border-yellow">Ver más</button>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-3">
                 <div class="card bg-dark text-white">
                     <img src="assets/grid/grid6.png" class="card-img" alt="Sample photo">
-                    <div class="card-img-overlay d-flex flex-column justify-content-end">
-                        <h1 class="card-title">Sweaters</h1>
-                        <button class="btn btn-primary">Ver más</button>
+                    <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
+                        <h1 class="card-title text-center">Sweaters</h1>
+                        <button class="btn btn-outline-primary text-yellow border-yellow">Ver más</button>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+
 
 
     <!-- END CATEGORIES -->
@@ -210,7 +216,7 @@
                 <div class="col-md-4">
                     <div class="logo">
                         <img src="assets/logo.png" alt="Logo">
-                        <p>Expresa tu individualidad y destaca entre la multitud. SE TU MISMO</p>
+                        <p>Expresa tu individualidad y destaca entre la multitud. SE TU MI O</p>
                     </div>
                 </div>
                 <div class="col-md-4">
