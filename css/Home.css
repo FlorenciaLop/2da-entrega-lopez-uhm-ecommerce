@@ -233,3 +233,33 @@ body {
 }
 
 /* END NEWSLETTER */
+
+
+
+
+
+
+/*
+ bootstrap
+*/
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.no-gutters>[class^="col-"],
+.no-gutters>[class^="col-"]>.card {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.img-row .col-lg-4:not(:last-child),
+.img-row .col-md-6:not(:last-child) {
+    margin-right: 10px;
+}
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
